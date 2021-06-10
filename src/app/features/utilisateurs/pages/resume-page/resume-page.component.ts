@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumePageComponent implements OnInit {
 
+  utilisateurId:string;
   constructor() { }
 
   ngOnInit(): void {
+    this.utilisateurId = localStorage.getItem("utilisateurId");
   }
 
 }

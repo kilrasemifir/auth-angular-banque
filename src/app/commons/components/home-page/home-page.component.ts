@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  titre:string
   constructor() { }
 
   ngOnInit(): void {
+    //localStorage.setItem('titre', "titre="+Math.random())
+    this.titre = localStorage.getItem("titre");
+    
   }
 
 }
