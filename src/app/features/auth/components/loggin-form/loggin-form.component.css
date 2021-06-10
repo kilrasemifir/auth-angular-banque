@@ -15,27 +15,10 @@
     margin-bottom: 5vh;
 }
 
-.loggin-input{
-    width: 80%;
-    height: 2em;
-    padding: 2px 20px;
-    background-color: none;
-    border-radius: 2em;
-    border: 2px solid;
-}
-
-.loggin-input:focus{
-    border-radius: 2em;
-    border: 2px solid red;
-    outline: none !important;
-}
 .loggin-box{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-}
-
-input{
 }
