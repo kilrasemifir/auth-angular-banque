@@ -1,0 +1,12 @@
+.user-profile{
+    background-color: aqua;
+    margin-top: 1%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

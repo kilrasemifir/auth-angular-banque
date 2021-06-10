@@ -1,0 +1,13 @@
+<div *ngFor="let utilisateur of utilisateurs" class="user-list-item">
+    <div>
+        <p>nom de l'utilisateur {{utilisateur.username}}</p>
+        <p>id: {{utilisateur.id}}</p>
+    </div>
+    <div>
+        <button class="user-detail" (click)="onDetail(utilisateur)">+</button>
+        <button class="user-supress" (click)="onSupress(utilisateur)">X</button>
+    </div>
+</div>
+<a routerLink="/utilisateurs/new">
+    <button class="user-list-item" >Nouvel utilisateur</button>
+</a>

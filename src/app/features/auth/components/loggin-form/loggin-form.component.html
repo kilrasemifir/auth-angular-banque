@@ -1,0 +1,14 @@
+<div class="loggin-box">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="loggin-form">
+        <h2>Authentification</h2>
+        <div class="loggin-form-item">
+            <label for="usernameOrEmail">Nom d'utilisateur ou email</label>
+            <input class="loggin-input" formControlName="usernameOrEmail">
+        </div>
+        <div class="loggin-form-item">
+            <label for="usernameOrEmail">Mot de passe</label>
+            <input class="loggin-input" formControlName="password">
+        </div>
+        <button type="submit">Ok!</button>
+    </form>
+</div>

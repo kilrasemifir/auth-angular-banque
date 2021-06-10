@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(red, green);
+    height: 50px;
+    z-index: 99;
+}
+
+.header-item{
+    padding: 10px;
+}
+.header-item a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.header-item:hover{
+    background: linear-gradient(green,red );
+    opacity: 50%;
+}
