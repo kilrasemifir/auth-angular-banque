@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Utilisateur } from '../../models/Utilisateur';
+import { UtilisateurHttpService } from '../../services/utilisateur-http.service';
 
 @Component({
   selector: 'app-resume-page',
@@ -8,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class ResumePageComponent implements OnInit {
 
   utilisateurId:string;
-  constructor() { }
+  utilisateur:Utilisateur;
+  constructor(private service: UtilisateurHttpService) { }
 
   ngOnInit(): void {
     this.utilisateurId = localStorage.getItem("utilisateurId");
+    this.service.findByIdDetail(this.utilisateurId).subscribe((utilisateur:Utilisateur)=>{
+      this.utilisateur = utilisateur;
+    })
   }
 
 }

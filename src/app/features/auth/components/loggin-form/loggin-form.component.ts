@@ -24,7 +24,8 @@ export class LogginFormComponent implements OnInit {
   onSubmit(){
     this.service.connexion(this.form.value).subscribe((utilisateurId:string)=>{
       localStorage.setItem("utilisateurId", utilisateurId);
-      this.router.navigate(["utilisateur/resume"]);
+      window.location.href = "utilisateur/resume";
+      //this.router.navigate(["utilisateur/resume"]);
     }, (err)=>{
 
     });
