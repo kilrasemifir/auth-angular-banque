@@ -11,3 +11,5 @@ Dans un terminal:
 npm i
 ng serve -o
 ```
+
+## Test
