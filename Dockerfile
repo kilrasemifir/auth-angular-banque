@@ -13,4 +13,4 @@ WORKDIR /usr/share/nginx/html
 # RUN rm -rf ./*
 COPY --from=builder /app/dist/front .
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx"]
